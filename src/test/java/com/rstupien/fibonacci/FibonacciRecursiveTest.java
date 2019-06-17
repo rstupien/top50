@@ -15,4 +15,11 @@ class FibonacciRecursiveTest {
         int generatedNumber = number.generate(40);
         assertThat(generatedNumber).isEqualTo(102334155);
     }
+
+    @Test
+    void optimizedGenerate() {
+        Generate number = new FibonacciRecursive();
+        int generatedNumber = number.optymizedGenerate(40);
+        assertThat(generatedNumber).isEqualTo(102334155);
+    }
 }
